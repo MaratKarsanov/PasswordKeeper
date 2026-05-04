@@ -135,7 +135,7 @@ EntryDeleted      { UserId, EntryId, Timestamp }
 
 ```bash
 # Клонировать репозиторий
-git clone https://github.com/<your-username>/PasswordVault.git
+git clone https://github.com/MaratKarsanov/PasswordVault.git
 cd PasswordVault
 
 # Запустить все сервисы
