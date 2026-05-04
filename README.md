@@ -106,41 +106,6 @@ EntryDeleted      { UserId, EntryId, Timestamp }
 
 ---
 
-## 🗃️ Модель данных
-
-```csharp
-// Auth Service
-public class User {
-    public Guid   Id                 { get; set; }
-    public string Email              { get; set; }
-    public string MasterPasswordHash { get; set; }  // Argon2id
-    public string Salt               { get; set; }
-    public DateTime CreatedAt        { get; set; }
-}
-
-// Vault Service
-public class VaultEntry {
-    public Guid   Id                { get; set; }
-    public Guid   UserId            { get; set; }
-    public string Title             { get; set; }
-    public string EncryptedLogin    { get; set; }    // AES-256-GCM
-    public string EncryptedPassword { get; set; }    // AES-256-GCM
-    public string IV                { get; set; }
-    public string Url               { get; set; }
-    public DateTime UpdatedAt       { get; set; }
-}
-
-// Audit Service
-public class AuditEvent {
-    public Guid         Id        { get; set; }
-    public Guid         UserId    { get; set; }
-    public string       EventType { get; set; }
-    public string       IPAddress { get; set; }
-    public JsonDocument Metadata  { get; set; }
-    public DateTime     Timestamp { get; set; }
-}
-```
-
 ---
 
 ## 🛠️ Технологии
