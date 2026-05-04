@@ -8,7 +8,7 @@
 [![RabbitMQ](https://img.shields.io/badge/RabbitMQ-MassTransit-FF6600?logo=rabbitmq)](https://www.rabbitmq.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?logo=postgresql)](https://www.postgresql.org/)
 
-Дипломный проект. Реализует принципы **zero-knowledge** шифрования, **Database per Service**, асинхронной коммуникации через брокер сообщений и отказоустойчивости через паттерны Retry и Circuit Breaker.
+Реализует принципы **zero-knowledge** шифрования, **Database per Service**, асинхронной коммуникации через брокер сообщений и отказоустойчивости через паттерны Retry и Circuit Breaker.
 
 ---
 
